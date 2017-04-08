@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 section {
+  position: relative;
   background: #fff;
   padding: 40px;
   max-width: 600px;
@@ -17,6 +18,30 @@ section {
   margin-right: auto;
   margin-bottom: 40px;
   border-radius: 2px;
+}
+
+code {
+  display: block;
+  padding: 10px 20px;
+  white-space: pre-wrap;
+  background-color: #E2ECD1;
+  border-radius: 2px;
+  color: #444;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.link {
+  color: #239AA2;
+  text-decoration: none;
+}
+
+.link.active {
+  color: #095D62;
+  border-bottom: 1px solid;
 }
 
 .prlx {
@@ -52,6 +77,7 @@ section {
   width: 100%;
   height: 100vh;
   margin-bottom: -30vh;
+  position: relative;
 }
 
 [class*=img] {
@@ -60,5 +86,5 @@ section {
   background-repeat: no-repeat;
 }
 .img1 {
-  background-image: url('img/lake.png');
+  background-image: url('img/lake1.jpg');
 }

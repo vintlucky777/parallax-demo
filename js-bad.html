@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href='./styles.css' rel='stylesheet'>
+
+    <title>Awesome parallax demo</title>
+  </head>
+  <body>
+    <div>
+      <div class='caption img1'></div>
+      <section class='material-shadow-2'>
+        <nav class='navbar'>
+          <a href='/js-bad' class='link active'>JS onScroll</a>
+          <a href='/js-performant' class='link'>JS + translate3d</a>
+          <a href='/js-smooth' class='link'>JS + requestAnimationFrame</a>
+          <a href='/pure-css' class='link'>CSS-only transform3d</a>
+        </nav>
+        <h1>js: simply hook on scroll event</h1>
+        <p>Check this out! This is a super-effective parallax demo</p>
+        <code>
+var parallaxElement = document.querySelector('.caption');
+function parallaxHandler() {
+  var scroll = window.scrollY;
+  parallaxElement.style.transform = 'translateY(' + Math.round(scroll * 0.5) + 'px)';
+}
+window.addEventListener('scroll', parallaxHandler);
+window.addEventListener('mousewheel', parallaxHandler);
+        </code>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cumque modi tempora, quam non suscipit ipsam, eveniet sit fugit quasi cupiditate nisi voluptatibus! Neque magni ad earum necessitatibus at iusto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cumque modi tempora, quam non suscipit ipsam, eveniet sit fugit quasi cupiditate nisi voluptatibus! Neque magni ad earum necessitatibus at iusto.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cumque modi tempora, quam non suscipit ipsam, eveniet sit fugit quasi cupiditate nisi voluptatibus! Neque magni ad earum necessitatibus at iusto.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cumque modi tempora, quam non suscipit ipsam, eveniet sit fugit quasi cupiditate nisi voluptatibus! Neque magni ad earum necessitatibus at iusto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod cumque modi tempora, quam non suscipit ipsam, eveniet sit fugit quasi cupiditate nisi voluptatibus! Neque magni ad earum necessitatibus at iusto.</p>
+        <p>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem est quo aspernatur tempora, necessitatibus, consequuntur odit quas perferendis, libero nemo sapiente. Obcaecati, deserunt quod aliquam rerum ex officia quidem illo.</span>
+          <span>Adipisci odit accusantium vero nisi amet quod ab ipsa magnam provident. Doloribus dolore est quibusdam, possimus tenetur magnam voluptatibus molestiae! Expedita maiores, perferendis porro est debitis aspernatur. Libero ipsa, rem.</span>
+          <span>Maiores omnis deleniti eaque architecto consectetur delectus itaque, neque temporibus. Beatae, porro cumque deserunt aliquid iure, ab ea praesentium, id quod dolores libero sit modi excepturi! Fugit esse nobis expedita.</span>
+          <span>Cumque repellendus, architecto quo vero doloribus explicabo, consequuntur quae at ex eum culpa odio. Animi dolores eius tenetur recusandae quibusdam eligendi, quod ipsa, repellendus sed facilis ipsam repudiandae, ab sequi.</span>
+          <span>Rem odit vel aspernatur ea fuga nemo laudantium quibusdam sapiente enim corporis similique optio reprehenderit labore asperiores et quae, neque facere amet officia aliquid perspiciatis, sunt odio accusamus! Similique, officiis!</span>
+          <span>Enim dignissimos accusantium voluptates, provident neque labore debitis at aut facere unde, eveniet ex. Dignissimos alias commodi, aspernatur quia officiis maiores a temporibus est tenetur optio similique illo sunt totam.</span>
+        </p>
+      </section>
+    </div>
+    <script>
+      var parallaxElement = document.querySelector('.caption');
+      function parallaxHandler() {
+        var scroll = window.scrollY;
+        parallaxElement.style.transform = 'translateY(' + Math.round(scroll * 0.5) + 'px)';
+      }
+      window.addEventListener('scroll', parallaxHandler);
+      window.addEventListener('mousewheel', parallaxHandler);
+    </script>
+  </body>
+</html>
